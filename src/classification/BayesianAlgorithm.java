@@ -1,7 +1,13 @@
 package classification;
 
-public class BayesianAlgorithm {
-    public static void main(String[] args) {
+import models.DataModelWeather;
 
+public class BayesianAlgorithm {
+    private static DataModelWeather[] dataSet = DataModelWeather.generateDataSet();
+
+    public static void main(String[] args) {
+        for (DataModelWeather e : dataSet) {
+
+        }
     }
 }

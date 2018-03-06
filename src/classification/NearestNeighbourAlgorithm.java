@@ -1,19 +1,19 @@
 package classification;
 
-import models.DataModel;
+import models.DataModelXY;
 
 public class NearestNeighbourAlgorithm {
 
     public static void main(String[] args) {
         int k = 10; // no Of nearest neighbour, can be changed
-        DataModel inputData = new DataModel();
-        inputData.setX(4);
-        inputData.setY(8);
-        DataModel[] dataSet = DataModel.generateDataSet();
+        DataModelXY inputData = new DataModelXY();
+        inputData.setX(20);
+        inputData.setY(30);
+        DataModelXY[] dataSet = DataModelXY.generateDataSet();
         int length = dataSet.length;
         int[] distances = new int[length];
         for (int i = 0; i < length; i++) {
-            distances[i] = DataModel.calculateDistance(dataSet[i], inputData);
+            distances[i] = DataModelXY.calculateDistance(dataSet[i], inputData);
         }
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length; j++) {
@@ -21,10 +21,9 @@ public class NearestNeighbourAlgorithm {
                     int temp = distances[j];
                     distances[j] = distances[i];
                     distances[i] = temp;
-                    DataModel tempData = dataSet[j];
+                    DataModelXY tempData = dataSet[j];
                     dataSet[j] = dataSet[i];
                     dataSet[i] = tempData;
-
                 }
             }
         }

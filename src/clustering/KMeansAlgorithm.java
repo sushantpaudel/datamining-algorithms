@@ -15,7 +15,7 @@ public class KMeansAlgorithm {
 
     public static void main(String args[]) {
         int[] dataSet = {1, 2, 5, 6, 2, 4, 1, 5, 8, 12, 5, 4, 5, 6, 3, 32, 65, 1, 2, 15, 12, 11, 5, 12, 12, 15, 20, 213, 13, 51, 3, 213, 1, 1320, 51, 1};
-        int k = 7; //Changeable value of number of clusters formed.
+        int k = 5; //Changeable value of number of clusters formed.
         int[] mean = new int[k];
         int[] beforeMean = new int[k];
         for (int i = 0; i < k; i++) {
@@ -51,9 +51,9 @@ public class KMeansAlgorithm {
             }
             for (int i = 0; i < k; i++) {
                 ArrayList<Integer> insideCluster = clusters.get(i);
-                try{
+                try {
                     mean[i] = sum(insideCluster) / insideCluster.size();
-                }catch (ArithmeticException e){
+                } catch (ArithmeticException e) {
                     mean[i] = 0;
                 }
             }
