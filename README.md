@@ -11,7 +11,9 @@ Data sets are generated manually in this program to understand the algorithm pro
 
 * [Nearest Neighbour Algorithm](https://github.com/sushantpaudel/datamining-algorithms/blob/master/src/classification/NearestNeighbourAlgorithm.java) - K-Nearest Neighbour Algorithm
     * Source - [Nearest Neighbour Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Nearest_neighbour_algorithm)
-
+* [Bayesian Classifier Algorithm](https://github.com/sushantpaudel/datamining-algorithms/blob/master/src/classification/BayesianAlgorithm.java) - Naive Bayesian Classifier
+   * Source - [6 Easy Steps to Learn Naive Bayes Algorithm (with codes in Python and R)](https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/)
+   
 ## [Clustering](https://github.com/sushantpaudel/datamining-algorithms/tree/master/src/clustering)
 
 * [DBSCAN Algorithm](https://github.com/sushantpaudel/datamining-algorithms/blob/master/src/clustering/DBSCANAlgorithm.java) - Density Based Scan method
